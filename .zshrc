@@ -5,9 +5,6 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
-path+=~/bin
-path+=~/.yarn/bin/
-
 for customFile in ${ZDOTDIR:-${HOME}/.zsh}/custom.d/*.zsh ; do
   [[ -r "${customFile}" ]] && source "${customFile}"
 done
